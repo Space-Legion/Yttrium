@@ -14,7 +14,7 @@ chmod +x wm/.config/wofi/*
 cp -r wm/. /$HOME/
 curl https://raw.githubusercontent.com/yperta/walls/main/wallhaven-pkkvg9.jpg > /$HOME/.config/1.jpg
 fc-cache -fv
-sway
+cd && sway
 }
 
 #functions call 
