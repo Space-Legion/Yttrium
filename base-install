@@ -2,7 +2,7 @@
 
 BASE_PKG() {
 sudo xbps-install -Syu -u xbps && sudo xbps-install -Syu
-sudo xbps-install -Syu elogind mesa-dri sway git vim sakura neofetch curl
+sudo xbps-install -Syu elogind mesa-dri sway waybar wofi swaylock git vim sakura neofetch arc-theme papirus-icon-theme sakura curl
 sudo ln -s /etc/sv/dbus /var/service
 }
 
@@ -10,9 +10,16 @@ SWAY_CONF() {
 mkdir -p /tmp/swaytmp
 export XDG_RUNTIME_DIR=/tmp/swaytmp
 sudo chmod +s /usr/bin/sway
+chmod +x wm/.config/wofi/*
+cp -r wm/. /$HOME/
+curl https://raw.githubusercontent.com/yperta/walls/main/wallhaven-pkkvg9.jpg > /$HOME/.config/1.jpg
+fc-cache -fv
 sway
 }
 
 #functions call 
 BASE_PKG
 SWAY_CONF
+
+
+
