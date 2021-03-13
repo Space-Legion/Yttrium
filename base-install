@@ -6,7 +6,7 @@ sudo xbps-install -Syu elogind mesa-dri sway git vim sakura neofetch curl
 sudo ln -s /etc/sv/dbus /var/service
 }
 
-SWAY_CONF{
+SWAY_CONF() {
 mkdir -p /tmp/swaytmp
 echo "export XDG_RUNTIME_DIR=/tmp/swaytmp" >> .profile
 sudo chmod +s /usr/bin/sway
