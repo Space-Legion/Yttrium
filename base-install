@@ -12,7 +12,7 @@ export XDG_RUNTIME_DIR=/tmp/swaytmp
 sudo chmod +s /usr/bin/sway
 chmod +x wm/.config/wofi/*
 cp -r wm/. /$HOME/
-curl https://raw.githubusercontent.com/yperta/walls/main/wallhaven-pkkvg9.jpg > /$HOME/.config/1.jpg
+curl https://raw.githubusercontent.com/Space-Legion/assets/main/yttrium.jpg > /$HOME/.config/1.jpg
 fc-cache -fv
 cd && sway
 }
