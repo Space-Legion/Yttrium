@@ -1,0 +1,18 @@
+#!/bin/bash
+
+BASE_PKG() {
+sudo xbps-install -Syu -u xbps && sudo xbps-install -Syu
+sudo xbps-install -Syu elogind mesa-dri sway git vim sakura neofetch curl
+sudo ln -s /etc/sv/dbus /var/service
+}
+
+SWAY_CONF{
+mkdir -p /tmp/swaytmp
+echo "export XDG_RUNTIME_DIR=/tmp/swaytmp" >> .profile
+sudo chmod +s /usr/bin/sway
+sway
+}
+
+#functions call 
+BASE_PKG
+SWAY_CONF
