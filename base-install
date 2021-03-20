@@ -14,7 +14,7 @@ chmod +x wm/.config/wofi/*
 cp -r wm/. /$HOME/
 curl https://raw.githubusercontent.com/Space-Legion/assets/main/yttrium.jpg > /$HOME/.config/1.jpg
 fc-cache -fv
-cd && sway
+sudo reboot
 }
 
 #functions call 
