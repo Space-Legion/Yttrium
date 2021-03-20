@@ -2,7 +2,7 @@
 
 BASE_PKG() {
 sudo xbps-install -Syu -u xbps && sudo xbps-install -Syu
-sudo xbps-install -Syu elogind mesa-dri sway Waybar wofi swaylock git vim sakura neofetch arc-theme papirus-icon-theme sakura curl
+sudo xbps-install -Syu elogind mesa-dri sway Waybar wofi swaylock git vim sakura neofetch libXt gvfs-mtp libfm-gtk+3 pcmanfm gvfs file-roller arc-theme papirus-icon-theme sakura curl
 sudo ln -s /etc/sv/dbus /var/service
 }
 
